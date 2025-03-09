@@ -4,6 +4,7 @@
     <title>Register</title>
 </head>
 <body>
+    
     <h1>Register</h1>
     <form action="RegisterServlet" method="post">
         Name: <input type="text" name="name"><br>
@@ -15,5 +16,6 @@
         <input type="submit" value="Register">
     </form>
     <p>Already have an account? <a href="login.jsp">Login here</a>.</p>
+    
 </body>
 </html>
