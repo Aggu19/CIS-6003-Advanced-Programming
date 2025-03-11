@@ -1,17 +1,13 @@
+<!-- index.jsp (Home Page) -->
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Cab Reservation System</title>
+    <title>Home - Online Vehicle Reservation</title>
 </head>
 <body>
-    
-    <h1>Welcome to Mega City Cab!</h1>
-    <p>This is the home page of the Cab Reservation System.</p>
-    <ul>
-        <li><a href="login.jsp">Login</a></li>
-        <li><a href="register.jsp">Register</a></li>
-        <li><a href="booking.jsp">Book a Cab</a></li>
-        <li><a href="viewBookings.jsp">View Bookings</a></li>
-    </ul>
+    <h2>Welcome to Mega City Cab</h2>
+    <a href="login.jsp">Login</a> | <a href="register.jsp">Register</a> | 
+    <a href="booking.jsp">Book a Ride</a>
 </body>
 </html>
