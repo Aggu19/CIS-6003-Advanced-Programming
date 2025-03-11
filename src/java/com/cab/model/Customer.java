@@ -1,28 +1,32 @@
-package com.cab.model;
+package com.cab.models;
 
 public class Customer {
-    private int customerID;
+    private int customerId;
     private String name;
-    private String address;
-    private String nic;
+    private String email;
+    private String password;
     private String phoneNumber;
+    private String address;
 
-    // Constructor
-    public Customer(int customerID, String name, String address, String nic, String phoneNumber) {
-        this.customerID = customerID;
+    // Constructors
+    public Customer() {}
+
+    public Customer(int customerId, String name, String email, String password, String phoneNumber, String address) {
+        this.customerId = customerId;
         this.name = name;
-        this.address = address;
-        this.nic = nic;
+        this.email = email;
+        this.password = password;
         this.phoneNumber = phoneNumber;
+        this.address = address;
     }
 
     // Getters and Setters
-    public int getCustomerID() {
-        return customerID;
+    public int getCustomerId() {
+        return customerId;
     }
 
-    public void setCustomerID(int customerID) {
-        this.customerID = customerID;
+    public void setCustomerId(int customerId) {
+        this.customerId = customerId;
     }
 
     public String getName() {
@@ -33,20 +37,20 @@ public class Customer {
         this.name = name;
     }
 
-    public String getAddress() {
-        return address;
+    public String getEmail() {
+        return email;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    public String getNic() {
-        return nic;
+    public String getPassword() {
+        return password;
     }
 
-    public void setNic(String nic) {
-        this.nic = nic;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public String getPhoneNumber() {
@@ -55,5 +59,13 @@ public class Customer {
 
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
     }
 }
